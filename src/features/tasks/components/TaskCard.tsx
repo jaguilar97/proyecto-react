@@ -20,7 +20,7 @@ interface TaskCardProps {
 function TaskCard({ task, onStatusChange }: TaskCardProps)
 {
     return (
-            <div style={{
+            <div className='cardGen' style={{
                 border: '1px solid #e2e8f0',
                 borderLeft: `4px solid ${priorityColors[task.priority]}`,
                 borderRadius: '8px',

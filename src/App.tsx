@@ -1,6 +1,7 @@
 import Layout from './shared/components/Layout';
 import Tabs from './shared/components/Tabs';
 import { TaskListContainer } from './features/tasks';
+import { ProjectListContainer } from './features/projects';
 
 function App() {
   return (
@@ -16,16 +17,13 @@ function App() {
             <TaskListContainer />
           </Tabs.Panel>
           <Tabs.Panel id="projects">
+            <ProjectListContainer />
+          </Tabs.Panel>
+          <Tabs.Panel id="stats">
             <p style={{ color: '#94a3b8', padding: '32px',
               textAlign: 'center' }}>
-              Próximamente: Módulo de Proyectos
+              Próximamente: Estadísticas
             </p>
-            </Tabs.Panel>
-            <Tabs.Panel id="stats">
-              <p style={{ color: '#94a3b8', padding: '32px',
-                textAlign: 'center' }}>
-                Próximamente: Estadísticas
-              </p>
           </Tabs.Panel>
         </Tabs.Panels>
       </Tabs>
