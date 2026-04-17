@@ -17,7 +17,7 @@ interface TaskCardProps {
     => void;
 }
 
-function TaskCard({ task, onStatusChange }: TaskCardProps)
+export function TaskCard({ task, onStatusChange }: TaskCardProps)
 {
     return (
             <div className='cardGen' style={{
@@ -47,5 +47,3 @@ function TaskCard({ task, onStatusChange }: TaskCardProps)
             </div>
     );
 }
-
-export default TaskCard;

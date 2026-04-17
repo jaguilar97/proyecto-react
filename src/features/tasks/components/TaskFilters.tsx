@@ -18,7 +18,7 @@ interface TaskFiltersProps {
     onChange: (value: FilterValue) => void;
 }
 
-function TaskFilters({ current, onChange }: TaskFiltersProps) {
+export function TaskFilters({ current, onChange }: TaskFiltersProps) {
     return (
     <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
         {filters.map(f => (
@@ -41,5 +41,3 @@ function TaskFilters({ current, onChange }: TaskFiltersProps) {
     );
 
 }
-
-export default TaskFilters;

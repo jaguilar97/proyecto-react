@@ -18,7 +18,7 @@ interface ProjectFiltersProps {
     onChange: (value: FilterValue) => void;
 }
 
-function ProjectFilters({ current, onChange }: ProjectFiltersProps) {
+export function ProjectFilters({ current, onChange }: ProjectFiltersProps) {
     return (
     <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
         {filters.map(f => (
@@ -41,5 +41,3 @@ function ProjectFilters({ current, onChange }: ProjectFiltersProps) {
     );
 
 }
-
-export default ProjectFilters;

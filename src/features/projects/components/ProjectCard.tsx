@@ -17,7 +17,7 @@ interface ProjectCardProps {
     => void;
 }
 
-function ProjectCard({ project, onStatusChange }: ProjectCardProps)
+export function ProjectCard({ project, onStatusChange }: ProjectCardProps)
 {
     return (
             <div className='cardGen' style={{
@@ -46,5 +46,3 @@ function ProjectCard({ project, onStatusChange }: ProjectCardProps)
             </div>
     );
 }
-
-export default ProjectCard;
